@@ -14,7 +14,7 @@ const generatePrompt = async (req, res) => {
             [Act is a Prompt Generator]
             Generate a prompt to obtain comprehensive step-by-step answers for "${query}" from AI tools like ChatGPT or Bard. The prompt should guide the AI model to provide a detailed explanation of the topic, broken down into clear and structured steps.
 
-            The generated prompt should outline the following:
+            The generated prompt should yield the following when used on AI tools like ChatGPT or Bard:
 
             Step 1: Introduction
             Provide a brief overview of "${query}" to set the context for further explanation.
@@ -34,7 +34,7 @@ const generatePrompt = async (req, res) => {
             Step 6: Conclusion
             Summarize the key points covered and provide any additional insights or resources for further learning.
 
-            Ensure that each step is well-organized, coherent, and provides sufficient detail to guide the user through understanding "${query}" effectively.
+            Ensure that it is not generating the answer for "${query}". The main purpose for this generator is to GENERATE PROMPTS which can be used to get comprehensive step by step answers from other AI Tools. 
 
             `,
             max_tokens: 300,
