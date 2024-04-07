@@ -48,8 +48,10 @@ export const PromptGenerator = () => {
                             </div>
                         ))
                     }
+                    {
+                        prompt.length===0 ? '' : <button className='copy-btn' onClick={() => handleCopy(prompt.join('\n\n'))}>Copy</button>
+                    }
                     
-                    <button className='copy-btn' onClick={() => handleCopy(prompt.join('\n\n'))}>Copy</button>
                 </div>
             </div>
         </>
