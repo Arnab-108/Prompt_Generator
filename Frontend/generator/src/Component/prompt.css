@@ -1,0 +1,39 @@
+
+.main-cont{
+    margin-top: 8vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 20vw;
+    margin: auto;
+}
+
+.container-1{
+    width: 45vw;
+    margin: 7vh auto;
+    border: 1px solid grey;
+}
+
+.btn-1{
+    background-color: brown;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-1 p{
+    color: white;
+}
+
+.copy-btn{
+    width: 9vw;
+    height: 5vh;
+    background-color: #be1e2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
