@@ -10,7 +10,7 @@ export const PromptGenerator = () => {
             query,
         }
         setLoad(true)
-        axios.post('http://localhost:8080/propmt-generator/generate', obj).then((res) => {
+        axios.post('https://prompt-generator-backend-cg3u.onrender.com/propmt-generator/generate', obj).then((res) => {
             console.log(res)
             setLoad(false)
             setPrompt(res.data.prompt.split('\n\n'))
